@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Grafico_Frequencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Questionario_Item.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/Questionario_Reposta_DAO.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/teste/Resumo_Frequencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/Questionario_Item_DAO.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/Questionario_Resposta_Item_DAO.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Questionario_Grafico.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/questionario.txt</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Selecao.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Questionario_Resposta.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Questionario_Grafico.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Resposta_Lista.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Tabela_Frequencia_Detalhe.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Questionario_Lista.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Resposta.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/teste/teste_frequencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/Persistencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Questionario_Resposta_Item.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/dao/Questionario_DAO.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Questionario.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Tabela_Frequencia_Grafico.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/teste/Linha_Frequencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/teste/Teste.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/forms/Frm_Tabela_Frequencia.java</file>
+            <file>file:/C:/projeto_integrador/Avaliador/src/modelo/Questionario.java</file>
+        </group>
+    </open-files>
+</project-private>

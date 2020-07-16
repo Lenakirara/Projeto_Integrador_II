@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/milto/Desktop/projeto_integrador/Banco_Avaliador.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2514"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="QUESTIONARIO"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1"></sql><sql name="SQL 1">CREATE TABLE IF NOT EXISTS QUESTIONARIO( 
+	QUESTIONARIO_ID         INTEGER NOT NULL PRIMARY KEY, 
+	DESCRICAO               VARCHAR(100) NOT NULL 
+);
+
+CREATE TABLE IF NOT EXISTS QUESTIONARIO_ITEM( 
+	QUESTIONARIO_ITEM_ID    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+	QUESTIONARIO_ID         INTEGER NOT NULL REFERENCES QUESTIONARIO(QUESTIONARIO_ID),
+	ORDEM                   INTEGER, 
+	DESCRICAO               VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS QUESTIONARIO_RESPOSTA 
+(
+	QUESTIONARIO_RESPOSTA_ID INTEGER NOT NULL, 
+	QUESTIONARIO_ID          INTEGER NOT NULL, 
+	NOME                     VARCHAR ( 100 ) NOT NULL, 
+	E_MAIL                   VARCHAR ( 100 ) NOT NULL, 	
+        TOTAL_SCORE              NUMERIC(12,2) NULL,
+        TOTAL_TEMPO              NUMERIC(12,2) NULL,
+        DATA_LANCAMENTO          DATE DEFAULT current_timestamp, 
+	FOREIGN KEY(QUESTIONARIO_ID) REFERENCES QUESTIONARIO(QUESTIONARIO_ID), 
+	PRIMARY KEY(QUESTIONARIO_RESPOSTA_ID) 
+);
+
+CREATE TABLE QUESTIONARIO_RESPOSTA_ITEM ( 
+       QUESTIONARIO_RESPOSTA_ID INTEGER NOT NULL REFERENCES QUESTIONARIO_RESPOSTA(QUESTIONARIO_RESPOSTA_ID),     
+       QUESTIONARIO_ITEM_ID INTEGER NOT NULL REFERENCES QUESTIONARIO_ITEM(QUESTIONARIO_ITEM_ID), 
+       OBSERVACAO VARCHAR(100) NOT NULL, 
+       VALOR INTEGER NOT NULL DEFAULT 0, 
+       PRIMARY KEY(QUESTIONARIO_RESPOSTA_ID,QUESTIONARIO_ITEM_ID) 
+)
+</sql><current_tab id="1"/></tab_sql></sqlb_project>
